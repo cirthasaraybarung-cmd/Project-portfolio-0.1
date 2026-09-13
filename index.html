@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Portfolio - จิรฐา สำราญบำรุง</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Sarabun',sans-serif;background:#030000;color:#990707}
+    nav{background:#000000;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0}
+    nav .logo{color:#8a2525;font-size:20px;font-weight:800}
+    nav ul{display:flex;list-style:none;gap:24px}
+    nav ul li a{color:#960b0b;text-decoration:none;font-size:14px;transition:color 0.2s}
+    nav ul li a:hover{color:rgb(109, 0, 0)}
+    .hero{background:linear-gradient(135deg,#000000,#8d0404);color:rgb(255, 248, 248);text-align:center;padding:80px 20px}
+    .avatar{width:120px;height:120px;border-radius:50%;border:4px solid #990c0c;margin-bottom:20px;box-shadow:0 0 30px rgba(99,102,241,0.4)}
+    .hero h1{font-size:36px;font-weight:800;margin-bottom:8px}
+    .hero .tagline{color:#f1f1f7;font-size:18px;margin-bottom:24px}
+    .hero-btns{display:flex;gap:12px;justify-content:center}
+    .btn-primary{padding:12px 24px;background:#000000;color:white;border-radius:8px;text-decoration:none;font-weight:700;transition:transform 0.2s}
+    .btn-primary:hover{transform:translateY(-2px)}
+    .container{max-width:800px;margin:0 auto;padding:40px 20px}
+    .section-title{font-size:24px;font-weight:800;color:#f3f2f2;margin-bottom:20px;padding-bottom:10px;border-bottom:2px solid #e2e8f0}
+    .about-text{font-size:16px;line-height:1.8;color:#f1eded}
+    .skills-wrap{display:flex;flex-wrap:wrap;gap:10px}
+    .skill-badge{background:#a10b0b;color:rgb(252, 250, 250);padding:6px 16px;border-radius:99px;font-size:14px;font-weight:600}
+    .card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .project-card{background:rgb(148, 4, 4);border-radius:12px;padding:20px;border:1px solid #e2e8f0;transition:transform 0.2s,box-shadow 0.2s}
+    .project-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(238, 235, 235, 0.1)}
+    .project-card h3{color:#e0e3e9;margin-bottom:8px}
+    .project-card p{color:#fbfcff;font-size:14px}
+    footer{background:#070000;color:#64748b;text-align:center;padding:24px;font-size:14px}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">🎓 Myweb Portfolio</div>
+    <ul>
+      <li><a href="#about">เกี่ยวกับ</a></li>
+      <li><a href="#skills">ทักษะ</a></li>
+      <li><a href="#projects">ผลงาน</a></li>
+      <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+  </nav>
+  <section class="hero">
+    <img class="avatar"
+         src="https://www.airforceheritageflight.org/wp-content/uploads/2023/11/f22_cockpit_video.jpeg"
+         alt="Profile">
+    <h1>สวัสดีครับ ผม จิรฐา สำราญบำรุง 👋</h1>
+    <p class="tagline">นักศึกษา มหาวิทยาลัยราชภัฏมหาสารคาม</p>
+    <div class="hero-btns">
+      <a class="btn-primary" href="#projects">ดูผลงาน</a>
+    </div>
+  </section>
+  <div class="container">
+    <section id="about">
+      <h2 class="section-title">เกี่ยวกับฉัน</h2>
+      <p class="about-text">
+        สวัสดีครับ ผม ไดมอนด์ กำลังศึกษาที่
+        [มหาวิทยาลัยราชภัฏมหาสารคาม] สาขา คอมพิวเตอร์ศึกษา ชั้นปีที่ 3
+        เเละตอนนี้กำลังงานท้ายสึนามิอยู่
+      </p>
+    </section>
+    <section id="skills" style="margin-top:40px">
+      <h2 class="section-title">ทักษะ</h2>
+      <div class="skills-wrap">
+        <span class="skill-badge">ว่ายนำ้</span>
+        <span class="skill-badge">ตัวโป่ม 50%</span>
+        <span class="skill-badge">ประหยัดเงิน82% (ขึ้นอยู่กับการค่าใช้จ่ายที่จำเป็นเเละกระทันหัน)</span>
+        <span class="skill-badge">สร้างความสนุกในกลุ่มเพื่อน</span>
+        <span class="skill-badge">จิตวิทยาเเข็ง</span>
+      </div>
+    </section>
+    <section id="projects" style="margin-top:40px">
+      <h2 class="section-title">ผลงาน</h2>
+      <div class="card-grid">
+        <div class="project-card">
+          <h3>🌐 Portfolio Website</h3>
+          <p>เว็บ Portfolio ส่วนตัว สร้างด้วย HTML5 & CSS</p>
+        </div>
+        <div class="project-card">
+          <h3>📝 สร้างเว็บPortfolio ขึ้น Gidhub </h3>
+          <p>ตอนนี้สร้างเว็บขึ้นบน Gidhub</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" style="margin-top:40px">
+      <h2 class="section-title">ติดต่อฉัน</h2>
+      <p>📧 Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      <p style="margin-top:8px">📱 Line ID: [ไม่บอก]</p>
+    </section>
+  </div>
+  <footer>
+    <p>© 2026 นายจิรฐา สำราญบำรุง สร้างด้วย ความทรหด และ HTML/CSS</p>
+  </footer>
+</body>
+</html>
